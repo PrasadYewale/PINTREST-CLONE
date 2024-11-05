@@ -1,0 +1,23 @@
+<%include ./partials/header.ejs %>
+
+  <div class="w-full h-screen bg-center bg-cover bg-[url('https://billo.app/wp-content/uploads/2020/08/nicole-saavedra-jgSgew8oJtY-unsplash-scaled-1.webp')] flex items-center justify-center">
+    <div class="w-[25vw] bg-white px-16 py-10 rounded-[30px]">
+      <h1 class="text-3xl text-center leading-none font-semibold text-zinc-700 tracking-tighter capitalize">Welcome to Pinterest</h1>
+      <form action="/login" method="post">
+        <input class = "rounded-md border-2 w-full px-3 py-2 mt-2" type="text" name="username" placeholder="Enter username">
+        <input class = "rounded-md border-2 w-full px-3 py-2 mt-2" type="password" name="password" placeholder="Enter password">
+        <a class="mt-2 inline-block font-semibold text-zinc-500" href="#">Forgot password?</a>
+        <input class = "border-2 w-full px-3 py-2 mt-2 bg-red-600 text-white rounded-full" type="submit" value="Login">
+        <p class="text-xs font-semibold text-zinc-500 mt-10 text-center w-3/3 mx-auto">By continuing, you agree to Pinterest's 
+          Terms of Service
+           and acknowledge you've read our 
+          Privacy Policy
+          . 
+          Notice at collection
+          </p>
+      </form>
+      <a class="w-full inline-block mt-7 text-sm font-semibold text-zinc-700 text-center" href="/register">Dont have an account?</a>
+    </div>
+  </div>
+
+  <%include ./partials/footer.ejs %>
